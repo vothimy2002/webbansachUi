@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HDMC Book | Quản Lý Đơn Hàng</title>
+    <link rel="icon" href="../image/logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/style-admin.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+</head>
+
+<body>
+    <header class="header-admin">
+        <div class="container">
+            <a href="thong-ke.html" title="Trang chủ"><img src="../image/logo.png" alt="logo"></a>
+            <a href="#" class="text-admin">Xin chào Quản Trị Viên</a>
+            <a class="dang-xuat" href="index.html">&nbsp;Đăng xuất</a>
+            <i class="fa fa-sign-out"></i>
+            <a class="trang-chu" href="thong-ke.html">&nbsp;Trang chủ</a>
+            <i class="fa fa-home"></i>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="admin-menu">
+                <h1>Admin Menu</h1>
+                <ul>
+                    <li><a href="quan-ly-san-pham.html"><i class="fa fa-list-ul"></i> Sản phẩm</a></li>
+
+                    <li><a href="quan-ly-don-hang.html"><i class="fa fa-envelope"></i> Đơn hàng</a></li>
+                    <li>
+                        <a href="quan-ly-user.html"> <i class="fa fa-cog"></i> Quản lý người dùng</a>
+                    </li>
+                    <li>
+                        <a href="chinh-sua-thong-tin.html"> <i class="fa fa-user"></i> Chỉnh sửa thông tin cá nhân</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="danh-sach-don-hang">
+                <h1>Quản Lý Đơn Hàng</h1>
+                <div class="loc-don-hang">
+                    Từ&emsp;<input type="date" name="bday">&emsp;Đến&emsp;
+                    <input type="date" name="bday" min="2019-01-01">&emsp;
+                    <input type="button" class="loc-ngay" name="loc-ngay" value="Tìm kiếm">
+                </div>
+                <table>
+                    <tr>
+                        <th>Mã Đơn Hàng</th>
+                        <th>Ảnh</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Ngày Đặt</th>
+                        <th>Người Đặt</th>
+                        <th>Giá</th>
+                        <th>Trạng Thái</th>
+                    </tr>
+                    <tr>
+                        <td>3118410330</td>
+                        <td><img src="../image/sachgiaokhoa/sachgiaokhoa.jpg" alt="Sách giao khoa 12"></td>
+                        <td>Bộ sách giáo khoa 12 </td>
+                        <td>20/11/2021 15:33</td>
+                        <td>Jonh</td>
+                        <td>200.000 VNĐ</td>
+                        <td>Đang giao</td>
+                    </tr>
+                    <tr>
+                        <td>3118410331</td>
+                        <td><img src="../image/sachgiaokhoa/sachgiaokhoa2.jpg" alt="Sách giáo khoa lớp 9"></td>
+                        <td>Bộ sách giáo khoa lớp 9</td>
+                        <td>20/11/2021 16:53</td>
+                        <td>Jinh</td>
+                        <td>150.000 VNĐ</td>
+                        <td>Đã giao</td>
+                    </tr>
+                    <tr>
+                        <td>3118410332</td>
+                        <td><img src="../image/tieuthuyet/book1.jpg" alt="Thám tử đã chết"></td>
+                        <td>Thám tử đã chết</td>
+                        <td>20/11/2021 17:21</td>
+                        <td>bon</td>
+                        <td>95.000 VNĐ</td>
+                        <td>Đang vận chuyển</td>
+                    </tr>
+                    <tr>
+                        <td>3118410333</td>
+                        <td><img src="../image/tieuthuyet/book2.jpg" alt="Mắ Biếc"></td>
+                        <td>Mắc Biếc</td>
+                        <td>20/11/2021 19:20</td>
+                        <td>alice</td>
+                        <td> 109.000</td> VNĐ</td>
+                        <td>Đang đóng gói</td>
+                    </tr>
+                    <tr>
+                        <td>3118410333</td>
+                        <td><img src="../image/sachnuocngoai/sachnuocngoai.jpg" alt="Quo Vadis"></td>
+                        <td>Quo Vadis</td>
+                        <td>20/12/2021 15:01</td>
+                        <td>Kun</td>
+                        <td>170.000 VNĐ</td>
+                        <td>Giao hàng thành công</td>
+                    </tr>
+                   
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fuid">
+        <div class="copyrights">
+            <p> <br> &copy; HDMC Book | Bán sách online <br></p>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

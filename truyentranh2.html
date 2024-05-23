@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HDMC Book | Truyên tranh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sp.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="icon" href="image/logo.png">
+</head>
+
+<body>
+    <!--Bat dau header-->
+    <header id="header">
+        <!--Bat dau header top-->
+        <div class="headerTop">
+            <div class="container">
+                <img src="image/phone-icon.svg" alt="phone" style="width:1%;">
+                <span style="font-style: italic;">Hotline:</span>
+                <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+                <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+        </div>
+        <!--Ket thuc header top-->
+        <!--Bat dau header mid-->
+        <div class="headerMid">
+            <div class="container">
+                <div class="headerMid-logo">
+                    <a href="index-user.html" title="Trang chủ">
+                        <img src="image/logo.png" alt="logo">
+                        
+                    </a>
+                </div>
+                <form class="headerMid-search">
+                    <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search" id="getIn">
+                    <button type="button" value="search" id="getBut"><img src="image/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiem()"></button>
+                </form>
+                <div class="headerMid-notify">
+                    <!--Đăng nhập, đăng ký, giỏ hàng-->
+                    <ul>
+                      <li class="login">
+                        <a href="login.html"><span><img src="image/user-login-icon.svg" title="Đăng nhập" alt="user-login-icon"></span>Đăng nhập</a>
+                      </li>
+                      <li class="register">
+                        <a href="register.html"><span><img src="image/user-register-icon.svg" title="Đăng ký" alt="user-register-icon"></span>Đăng ký</a>
+                      </li>
+                        <li class="shopping-cart">
+                            <a href="shoppingcart.html"><span><img src="image/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Ket thuc header mid-->
+    </header>
+    <!--Ket thuc header-->
+    <!--Bat dau navbar-->
+    <div class="menu">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="truyentranh.html">
+                        <span>
+                <img src="image/truyentranh/truyentranh-icon.png" alt="truyentranh-icon"/>
+              </span> TRUYỆN TRANH
+                    </a>
+                </li>
+                <li>
+                    <a href="sachgiaokhoa.html">
+                        <span>
+                <img src="image/sachgiaokhoa/sachgiaokhoa-icon.png" alt="sachgiaokhoa-icon"/>
+              </span> SÁCH GIÁO KHOA
+                    </a>
+                </li>
+                <li>
+                    <a href="tieuthuyet.html">
+                        <span>
+                <img src="image/tieuthuyet/tieuthuyet-icon.png" alt="tieuthuyet-icon"/>
+              </span> TIỂU THUYẾT
+                    </a>
+                </li>
+                <li>
+                    <a href="sachnuocngoai.html">
+                        <span>
+                <img src="image/sachnuocngoai/sachnuocngoai-icon.png" alt="sachnuocngoai-icon"/>
+              </span> SÁCH NƯỚC NGOÀI
+                    </a>
+                </li>
+                <li>
+                    <a href="sachdocthu.html">
+                        <span>
+                <img src="image/sachdocthu/sachdoct-icon.png" alt="sachdocthu-icon"/>
+              </span> SÁCH ĐỌC THỬ
+                    </a>
+                </li>
+                <li>
+                    <a href="sachnauan.html">
+                        <span>
+                <img src="image/sachnauan/sachnauan-icon.png" alt="sachnauan-icon"/>
+              </span> SÁCH NẤU ĂN
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--Ket thuc navbar-->
+    <!--Bat dau Content main-->
+    <!--Bat dau SP-->
+    <div class="item">
+        <a href="truyentranh.html">
+            <img src="image/truyentranh/comic-bg.png">
+        </a>
+    </div>
+    <div class="text-lien-ket">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">Trang chủ</a>&nbsp;
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="truyentranh.html">Truyện Tranh</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="title-sp">TRUYỆN TRANH</h1>
+    </div>
+
+    <div class="product-list">
+        <div class="container">
+            <!--Bắt đầu "Tìm theo"-->
+            <span>TÌM THEO:</span>
+            <div class="dropdown-sp">
+                <button>Thể Loại</button>
+                <ul class="dropdown">
+                    <li><a href="#">Truyện Cười</a></li>
+                    <li><a href="#">Truyện Ma</a></li>
+                    <li><a href="#">Tiên Hiệp</a></li>
+                    <li><a href="#">Ngôn Tình</a></li>
+                    <li><a href="#">Xuyên Không</a></li>
+                    <li><a href="#">Trinh Thám</a></li>
+                    <li><a href="#">Khoa Học</a></li>
+                    <li><a href="#">Quân Sự</a></li>
+                    <li><a href="#">Cổ tích</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-sp">
+                <button>Quốc Gia</button>
+                <ul class="dropdown">
+                    <li><a href="#">Việt Nam</a></li>
+                    <li><a href="#">Trung quốc</a></li>
+                    <li><a href="#">Hàn Quốc</a></li>
+                    <li><a href="#">Nhật Bản</a></li>
+                    <li><a href="#">Thái Lan</a></li>
+                    <li><a href="#">Mỹ</a></li>
+                    <li><a href="#">Hồng Kông</a></li>
+                    <li><a href="#">Hungary</a></li>
+                    <li><a href="#">Ý</a></li>
+                    <li><a href="#">Tây Ban Nha</a></li>
+                    <li><a href="#">Vương Quốc Anh</a></li>
+                    <li><a href="#">Hà Lan</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-sp">
+                <button>Khoảng giá</button>
+                <ul class="dropdown">
+                    <li><a href="#">Dưới 100.000đ</a></li>
+                    <li><a href="#">Từ 100.000đ-500.000đ</a></li>
+                    <li><a href="#">Từ 500.000đ-1 triệu</a></li>
+                    <li><a href="#">Trên 1 triệu</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown-sp">
+                <button>Mua nhiều nhất</button>
+                <ul class="dropdown">
+                    <li><a href="#">Top mua trong năm</a></li>
+                    <li><a href="#">Top mua trong tháng</a></li>
+                    <li><a href="#">Top mua trong tuần</a></li>
+                    <li><a href="#">Top mua trong ngày</a></li>
+                </ul>
+            </div>
+            <!--Kết thúc "Tìm theo"-->
+            <ul class="thong-tin-them">
+                <li>
+                    <p title="Sản phẩm chính hãng">
+                        <span class="fa fa-thumbs-up"></span>
+                        <small>Sản phẩm chính hãng</small>
+                    </p>
+                </li>
+                <li>
+                    <p title="Thanh toán linh hoạt">
+                        <span class="fa fa-credit-card"></span>
+                        <small>Thanh toán linh hoạt</small>
+                    </p>
+                </li>
+                <li>
+                    <p title="Giá thành tốt nhất">
+                        <span class="fa fa-check-square"></span>
+                        <small>Giá thành tốt nhất</small>
+                    </p>
+                </li>
+                <li>
+                    <p title="Hỗ trợ trả góp">
+                        <span class="fa fa-usd"></span>
+                        <small>Hỗ trợ trả góp</small>
+                    </p>
+                </li>
+                <li>
+                    <p title="Giao hàng toàn quốc">
+                        <span class="fa fa-truck"></span>
+                        <small>Giao hàng toàn quốc</small>
+                    </p>
+                </li>
+            </ul>
+            <!--Bat dau Product-->
+            <!--Box San pham-->
+            <ul style="margin-top: 10px;" class="list-product">
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Thánh Địa Và Phù Thuỷ Tham Lam">
+                                <img src="image/truyentranh/thanhdiavaphuthuythamlam.png" alt="Thánh Địa Và Phù Thuỷ Tham Lam">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Thánh Địa Và Phù Thuỷ Tham Lam">Thánh Địa Và Phù Thuỷ Tham Lam</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 500.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc gia: Nhật Bản</p>
+                            <p style="font-size: 12px;">Thể Loại : Trinh Thám</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Giấy Báo Tử">
+                                <img src="image/truyentranh/giaybaotu.png" alt="Giấy Báo Tử">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Giấy Báo Tử">Giấy Báo Tử</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 10.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc gia : Hàn Quốc</p>
+                            <p style="font-size: 12px;">Thể loại : Manga, Trinh Thám</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Bộ Bộ Sinh Liên">
+                                <img src="image/truyentranh/bobosinhlien.png" alt="Bộ Bộ Sinh Liên ">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Bộ Bộ Sinh Liên">Bộ Bộ Sinh Liên</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 900.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Quân Sự</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Yêu Chàng Quân Sự Đáng Ghét">
+                                <img src="image/truyentranh/yeuchangquansudangghet.png" alt="Yêu Chàng Quân Sự Đáng Ghét">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Yêu Chàng Quân Sự Đáng Ghét">Yêu Chàng Quân Sự Đáng Ghét</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 850.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Hàn Quốc/p>
+                            <p style="font-size: 12px;">Thể Loại : Quân Sự, Ngôn Tình</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Bắc Tống Phong Lưu">
+                                <img src="image/truyentranh/bactongphongluu.png" alt="Bắc Tống Phong Lưu">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Bắc Tống Phong Lưu">Bắc Tống Phong Lưu</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 520.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc </p>
+                            
+                            <p style="font-size: 12px;">Thể Loại : Quân Sự, Tiên Hiệp, Lịch Sử </p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="ĐYêu Nữ Trốn Chỗ Nào">
+                                <img src="image/truyentranh/yeunutronchonao.png" alt="Yêu Nữ Trốn Chỗ Nào">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Yêu Nữ Trốn Chỗ Nào">Yêu Nữ Trốn Chỗ Nào</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 400.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Tiên hiệpHuyền HuyễnXuyên Không </p>
+                         
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Linh Vũ Thiên Hạ">
+                                <img src="image/truyentranh/linhvuthienha.png" alt="Linh Vũ Thiên Hạ">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.htmll" title="Linh Vũ Thiên Hạ">Linh Vũ Thiên Hạ</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 920.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Tiên Hiệp, Dị Giới, Tu Chân</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Chư Giới Tận Thế Online">
+                                <img src="image/truyentranh/chugioitantheonline.png" alt="Chư Giới Tận Thế Online">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Chư Giới Tận Thế Online">Chư Giới Tận Thế Online</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 1.210.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Tiên Hiệp , Dị Giới , Huyền Huyễn, Xuyên Không</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Long Thần Tướng">
+                                <img src="image/truyentranh/longthantuong.png" alt="Long Thần Tướng">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Long Thần Tướng">Long Thần Tướng</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 290.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Việt Nam</p>
+                            <p style="font-size: 12px;">Thể Loại : Lích Sử, Action</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Học Viện Bóng Đá">
+                                <img src="image/truyentranh/hocvienbongda.png" alt="Học Viện Bóng Đá">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Học Viện Bóng Đá">Học Viện Bóng Đá</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 1000.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Việt Nam</p>
+                            <p style="font-size: 12px;">Thể Loại : Thể Thao</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Thần Đạo Đan Tôn">
+                                <img src="image/truyentranh/thandaodanton.png" alt="Thần Đạo Đan Tôn">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.htmll" title="Thần Đạo Đan Tôn">Thần Đạo Đan Tôn</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 630.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Tiên Hiệp, Trọng Sinh</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Thơ Duyên">
+                                <img src="image/truyentranh/thoduyen.png" alt="Thơ Duyên">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Thơ Duyên">RThơ Duyên</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 300.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Việt Nam</p>
+                            <p style="font-size: 12px;">Thể Loại : Thơ, Ngôn Tình</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Thầy Bói Xem Voi">
+                                <img src="image/truyentranh/thayboixemvoi.png" alt="Thầy Bói Xem Voi">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Thầy Bói Xem Voi">Thầy Bói Xem Voi</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 150.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Việt Nam</p>
+                            <p style="font-size: 12px;">Thể Loại : Truyện Cười , Hài Hước</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Tuyệt Sắc Quyến Rũ : Quỷ Y Chí Tôn">
+                                <img src="image/truyentranh/tuyesacquyenru.png" alt="Tuyệt Sắc Quyến Rũ : Quỷ Y Chí Tôn">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Tuyệt Sắc Quyến Rũ : Quỷ Y Chí Tôn">Tuyệt Sắc Quyến Rũ : Quỷ Y Chí Tôn</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 60.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Action, Cổ Đại</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Giáo Chủ Tân Nhiệm Muốn Hoàn Lương">
+                                <img src="image/truyentranh/giaochutannhiem.png" alt="Giáo Chủ Tân Nhiệm Muốn Hoàn Lương">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Giáo Chủ Tân Nhiệm Muốn Hoàn Lương">Giáo Chủ Tân Nhiệm Muốn Hoàn Lương</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 150.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Trung Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Mecha</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+                <!--Product-->
+                <li>
+                    <div class="bglipro">
+                        <figure class="product-img">
+                            <a href="truyentranhchitiet.html" title="Ta Là Vua Pháp Sư">
+                                <img src="image/truyentranh/talavuaphapsu.png" alt="Ta Là Vua Pháp Sư">
+                            </a>
+                        </figure>
+                        <div class="product-item-info">
+                            <h4>
+                                <a href="truyentranhchitiet.html" title="Shaman-Pháp Sư">Ta Là Vua Pháp Sư</a>
+                            </h4>
+                            <div class="price-box">
+                                <span>Giá: 760.000 VND</span>
+                            </div>
+                            <p style="font-size: 12px;">Quốc Gia : Hàn Quốc</p>
+                            <p style="font-size: 12px;">Thể Loại : Trùng Sinh, Đô Thị, Hệ Thống</p>
+                            <a href="truyentranhchitiet.html"><button>Chi tiết</button></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--Kết thúc Product-->
+            <!--Phân trang sản phẩm-->
+            <div class="phan-trang">
+                <ul class="phan-trang-sp">
+                    <li><a style="background-color: #fdd504;color: #000;" title="1">1</a></li>
+                    <li><a href="truyentranh2.html" title="2">2</a></li>
+                    <li><a href="truyentranh3.html" title="3">3</a></li>
+                    <li><a href="truyentranh2.html" id="next" title="Next">Trang sau</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Ket thuc SP-->
+    <!--Ket thuc Content main-->
+    <!--Bắt đầu Footer-->
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li class="footer1">
+                    <div class="heading">Chính sách</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">Chính sách giao hàng</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo hành & đổi trả</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách thanh toán</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo mật thông tin</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Dịch vụ & hỗ trợ</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">An toàn mua bán</a></li>
+                            <li><a href="#" rel="nofollow">Đăng ký cộng tác viên</a></li>
+                            <li><a href="#" rel="nofollow">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Thông tin liên hệ</div>
+                    <div class="content-footer">
+                        <div class="social-media">
+                            <a href="#" class="button-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="button-ggplus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="button-youtube"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+                        <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Góp ý, phản ánh</div>
+                    <div class="content-footer">
+                        <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+                        <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Text cuối-->
+    </footer>
+    <!--Kết thúc Footer-->
+
+    
+</body>
+
+</html>

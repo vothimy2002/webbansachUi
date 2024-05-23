@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HDMC Book | Tiểu thuyết</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-sp.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link rel="icon" href="image/logo.png">
+</head>
+<body>
+    <!--Bat dau header-->
+    <header id="header">
+      <!--Bat dau header top-->
+          <div class="headerTop">
+            <div class="container">
+              <img src="image/phone-icon.svg" alt="phone" style="width:1%;">
+              <span style="font-style: italic;">Hotline:</span>
+              <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+              <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+          </div>
+      <!--Ket thuc header top-->
+      <!--Bat dau header mid-->
+      <div class="headerMid">
+        <div class="container">
+          <div class="headerMid-logo">
+              <a href="index.html" title="Trang chủ">
+                <img src="image/logo.png" alt="logo" >
+              </a>
+          </div>
+          <form class="headerMid-search">
+            <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search"  id="getIn">
+            <button type="button" value="search" id="getBut"><img src="image/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiem()"></button>
+          </form> 
+          <div class="headerMid-notify"> <!--Đăng nhập, đăng ký, giỏ hàng-->
+            <ul>
+              <li class="login">
+                <a href="login.html"><span><img src="image/user-login-icon.svg" title="Đăng nhập" alt="user-login-icon"></span>Đăng nhập</a>
+              </li>
+              <li class="register">
+                <a href="register.html"><span><img src="image/user-register-icon.svg" title="Đăng ký" alt="user-register-icon"></span>Đăng ký</a>
+              </li> <!--shopping-cart-icon.svg-->
+              <li class="shopping-cart">
+                <a href="shoppingcart.html"><span><img src="image/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!--Ket thuc header mid-->
+      </header>
+      <!--Ket thuc header-->
+      <!--Bat dau navbar-->
+      <nav class="navigation">
+          <ul>
+              <li>
+                <a href="truyentranh.html">
+                <span>
+                  <img src="image/truyentranh/truyentranh-icon.png" alt="truyentranh-icon"/>
+                </span>  
+                TRUYỆN TRANH
+                </a>
+              </li>
+              <li>
+                <a href="sachgiaokhoa.html">
+                <span>
+                  <img src="image/sachgiaokhoa/sachgiaokhoa-icon.png" alt="sachgiaokhoa-icon"/>
+                </span>  
+                SÁCH GIÁO KHOA
+                </a>
+              </li>
+              <li>
+                <a href="tieuthuyet.html">
+                <span>
+                  <img src="image/tieuthuyet/tieuthuyet-icon.png" alt="tieuthuyet-icon"/>
+                </span>  
+                TIỂU THUYẾT
+                </a>
+              </li>
+               <li>
+                <a href="sachnuocngoai.html">
+                <span>
+                  <img src="image/sachnuocngoai/sachnuocngoai-icon.png" alt="sachnuocngoai-icon"/>
+                </span>  
+                SÁCH NƯỚC NGOÀI
+                </a>
+              </li>
+              <li>
+                <a href="sachdocthu.html">
+                <span>
+                  <img src="image/sachdocthu/sachdoct-icon.png" alt="sachdocthu-icon"/>
+                </span>  
+               SÁCH ĐỌC THỬ
+                </a>
+              </li>
+              <li>
+                <a href="sachnauan.html">
+                <span>
+                  <img src="image/sachnauan/sachnauan-icon.png" alt="sachnauan-icon"/>
+                </span>  
+                SÁCH NẤU ĂN
+                </a>
+              </li>
+          </ul>
+      </nav>
+      <!--Ket thuc navbar-->
+    <!--Bat dau Content main-->
+    <!--Bat dau SP-->
+    <div class="item">
+       <a href="tieuthuyet.html">
+         <img src="image/tieuthuyet/tieuthuyet-bg.png">
+       </a>
+    </div>
+    <div class="text-lien-ket">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="index.html">Trang chủ</a>&nbsp;
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li>
+            <a href="tieuthuyet.html">Tiểu thuyết</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title-sp">Tiểu thuyết</h1> 
+    </div> 
+    <div class="product-list">
+      <div class="container">
+        <!--Bắt đầu "Tìm theo"-->
+        <span>TÌM THEO:</span>
+        <div class="dropdown-sp">
+          <button>Loại sách</button>
+          <ul class="dropdown">
+            <li><a href="#">Châu âu</a></li>
+            <li><a href="#">Việt Nam</a></li>
+            <li><a href="#">Nhật bản</a></li>
+            <li><a href="#">Khác</a></li>
+        </div>
+
+        <div class="dropdown-sp">
+          <button>Thương hiệu</button>
+          <ul class="dropdown">
+            <li><a href="#">Trong nước</a></li>
+            <li><a href="#">Ngoài nước</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown-sp">
+          <button>Khoảng giá</button>
+          <ul class="dropdown">
+            <li><a href="#">Dưới 5 chục</a></li>
+            <li><a href="#">Dưới 1 trăm</a></li>
+            <li><a href="#">Trên 1 trăm</a></li>
+          </ul>
+        </div>
+        
+        <div class="dropdown-sp">
+          <button>Khác</button>
+          <ul class="dropdown">
+            <li><a href="#">Dành cho người mới đọc</a></li>
+            <li><a href="#">Dành cho người thăm niên</a></li>
+            <li><a href="#">Khác</a></li>
+          </ul>
+        </div>
+        <!--Kết thúc "Tìm theo"-->
+        <ul class="thong-tin-them">
+          <li>
+            <p title="Sản phẩm chính hãng">
+              <span class="fa fa-thumbs-up"></span>
+              <small>Sản phẩm chính hãng</small>
+            </p>
+          </li>
+          <li>
+            <p title="Thanh toán linh hoạt">
+              <span class="fa fa-credit-card"></span>
+              <small>Thanh toán linh hoạt</small>
+            </p>
+          </li>
+          <li>
+            <p title="Giá thành tốt nhất">
+              <span class="fa fa-check-square"></span>
+              <small>Giá thành tốt nhất</small>
+            </p>
+          </li>
+          <li>
+            <p title="Hỗ trợ trả góp">
+              <span class="fa fa-usd"></span>
+              <small>Hỗ trợ trả góp</small>
+            </p>
+          </li>
+          <li>
+            <p title="Giao hàng toàn quốc">
+              <span class="fa fa-truck"></span>
+              <small>Giao hàng toàn quốc</small>
+            </p>
+          </li>
+        </ul>
+        <!--Bat dau Product-->
+          <!--Box San pham-->
+          <ul style="margin-top: 10px;" class="list-product">
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">
+                    <img src="image/tieuthuyet/book1.jpg" alt="Truyện Thám tử đã chết tập 1">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">Truyện Thám tử đã chết tập 1</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 95.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng Kèm Bookmark Tròn + Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">
+                    <img src="image/tieuthuyet/book2.jpg" alt="Sách Mắt biếc">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">Sách Mắt biếc</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 109.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">
+                    <img src="image/tieuthuyet/book3.jpg" alt="Harry Potter và Hoàng Tử Lai">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">Harry Potter và Hoàng Tử Lai</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 159.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">
+                    <img src="image/tieuthuyet/book4.jpg" alt="A Man Called Ove: A Novel">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">A Man Called Ove: A Novel</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 259.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">
+                    <img src="image/tieuthuyet/book1.jpg" alt="Truyện Thám tử đã chết tập 1">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">Truyện Thám tử đã chết tập 1</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 95.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng Kèm Bookmark Tròn + Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">
+                    <img src="image/tieuthuyet/book2.jpg" alt="Sách Mắt biếc">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">Sách Mắt biếc</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 109.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">
+                    <img src="image/tieuthuyet/book3.jpg" alt="Harry Potter và Hoàng Tử Lai">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">Harry Potter và Hoàng Tử Lai</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 159.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">
+                    <img src="image/tieuthuyet/book4.jpg" alt="A Man Called Ove: A Novel">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">A Man Called Ove: A Novel</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 259.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">
+                    <img src="image/tieuthuyet/book1.jpg" alt="Truyện Thám tử đã chết tập 1">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">Truyện Thám tử đã chết tập 1</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 95.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng Kèm Bookmark Tròn + Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">
+                    <img src="image/tieuthuyet/book2.jpg" alt="Sách Mắt biếc">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">Sách Mắt biếc</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 109.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">
+                    <img src="image/tieuthuyet/book3.jpg" alt="Harry Potter và Hoàng Tử Lai">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">Harry Potter và Hoàng Tử Lai</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 159.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">
+                    <img src="image/tieuthuyet/book4.jpg" alt="A Man Called Ove: A Novel">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">A Man Called Ove: A Novel</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 259.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">
+                    <img src="image/tieuthuyet/book1.jpg" alt="Truyện Thám tử đã chết tập 1">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Truyện Thám tử đã chết tập 1">Truyện Thám tử đã chết tập 1</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 95.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng Kèm Bookmark Tròn + Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">
+                    <img src="image/tieuthuyet/book2.jpg" alt="Sách Mắt biếc">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Sách Mắt biếc">Sách Mắt biếc</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 109.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">
+                    <img src="image/tieuthuyet/book3.jpg" alt="Harry Potter và Hoàng Tử Lai">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="Harry Potter và Hoàng Tử Lai">Harry Potter và Hoàng Tử Lai</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 159.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">
+                    <img src="image/tieuthuyet/book4.jpg" alt="A Man Called Ove: A Novel">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="tieuthuyetchitiet.html" title="A Man Called Ove: A Novel">A Man Called Ove: A Novel</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 259.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Tặng kèm Short Story + Bìa 2 Mặt</p>
+                  <a href="tieuthuyetchitiet.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>           
+          </ul>
+        <!--Kết thúc Product-->
+        <!--Phân trang sản phẩm-->
+        <div class="phan-trang">
+          <ul class="phan-trang-sp">
+            <li><a style="background-color: #fdd504;color: #000;" title="1">1</a></li>
+            <li><a href="tieuthuyet2.html" title="2">2</a></li>
+            <li><a href="tieuthuyet3.html" title="3">3</a></li>
+            <li><a href="tieuthuyet2.html" id="next" title="Next">Trang sau</a></li>
+          </ul>
+        </div>
+       </div>
+    </div>       
+    <!--Ket thuc SP-->
+    <!--Ket thuc Content main-->
+    <!--Bắt đầu Footer-->
+    <footer id="footer">
+      <div class="container">
+        <ul>
+          <li class="footer1">
+            <div class="heading">Chính sách</div>
+            <div class="content-footer">
+              <ul>
+                <li><a href="#" rel="nofollow">Chính sách giao hàng</a></li>
+                <li><a href="#" rel="nofollow">Chính sách bảo hành & đổi trả</a></li>
+                <li><a href="#" rel="nofollow">Chính sách thanh toán</a></li>
+                <li><a href="#" rel="nofollow">Chính sách bảo mật thông tin</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="footer1">
+            <div class="heading">Dịch vụ & hỗ trợ</div>
+            <div class="content-footer">
+              <ul>
+                <li><a href="#" rel="nofollow">An toàn mua bán</a></li>
+                <li><a href="#" rel="nofollow">Đăng ký cộng tác viên</a></li>
+                <li><a href="#" rel="nofollow">Câu hỏi thường gặp</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="footer1">
+            <div class="heading">Thông tin liên hệ</div>
+            <div class="content-footer">
+              <div class="social-media">
+                <a href="#" class="button-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="button-ggplus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="button-youtube"><i class="fa fa-youtube"></i></a>
+              </div>
+              <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+              <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+          </li>
+
+          <li class="footer1">
+            <div class="heading">Góp ý, phản ánh</div>
+            <div class="content-footer">
+              <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+              <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--Text cuối-->
+    </footer>
+    <!--Kết thúc Footer-->
+    
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

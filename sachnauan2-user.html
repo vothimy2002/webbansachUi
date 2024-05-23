@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HDMC Book | Sách nấu ăn</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-sp.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link rel="icon" href="image/logo.png">
+</head>
+<body>
+    <!--Bat dau header-->
+    <header id="header">
+      <!--Bat dau header top-->
+          <div class="headerTop">
+            <div class="container">
+              <img src="image/phone-icon.svg" alt="phone" style="width:1%;">
+              <span style="font-style: italic;">Hotline:</span>
+              <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+              <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+          </div>
+      <!--Ket thuc header top-->
+      <!--Bat dau header mid-->
+      <div class="headerMid">
+        <div class="container">
+          <div class="headerMid-logo">
+              <a href="index-user.html" title="Trang chủ">
+                <img src="image/logo.png" alt="logo" >
+              </a>
+          </div>
+          <form class="headerMid-search">
+            <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search"  id="getIn">
+            <button type="button" value="search" id="getBut"><img src="image/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiem()"></button>
+          </form> 
+          <div class="headerMid-notify"> <!--Đăng nhập, đăng ký, giỏ hàng-->
+            <ul>
+                <li class="login">
+                    <a href="user/index.html"><span><img src="image/user-circle-solid.svg"></span>Quản lý tài khoản</a>
+                </li>
+                <li class="shopping-cart">
+                    <a href="shoppingcart-user.html"><span><img src="image/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+                </li>
+                <li class="logout" style="margin-left: 20px;">
+                    <a href="index.html"><span ><img src="image/sign-out-alt-solid.svg" title="Đăng xuất">Đăng xuất</span></a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <!--Ket thuc header mid-->
+      </header>
+      <!--Ket thuc header-->
+      <!--Bat dau navbar-->
+      <div class="menu">
+      <nav class="navigation">
+        <ul>
+          <li>
+              <a href="truyentranh-user.html">
+                  <span>
+                <img src="image/truyentranh/truyentranh-icon.png" alt="truyentranh-icon"/>
+              </span> TRUYỆN TRANH
+              </a>
+          </li>
+          <li>
+              <a href="sachgiaokhoa-user.html">
+                  <span>
+                <img src="image/sachgiaokhoa/sachgiaokhoa-icon.png" alt="sachgiaokhoa-icon"/>
+              </span> SÁCH GIÁO KHOA
+              </a>
+          </li>
+          <li>
+              <a href="tieuthuyet-user.html">
+                  <span>
+                <img src="image/tieuthuyet/tieuthuyet-icon.png" alt="tieuthuyet-icon"/>
+              </span> TIỂU THUYẾT
+              </a>
+          </li>
+          <li>
+              <a href="sachnuocngoai-user.html">
+                  <span>
+                <img src="image/sachnuocngoai/sachnuocngoai-icon.png" alt="sachnuocngoai-icon"/>
+              </span> SÁCH NƯỚC NGOÀI
+              </a>
+          </li>
+          <li>
+              <a href="sachdocthu-user.html">
+                  <span>
+                <img src="image/sachdocthu/sachdoct-icon.png" alt="sachdocthu-icon"/>
+              </span> SÁCH ĐỌC THỬ
+              </a>
+          </li>
+          <li>
+              <a href="sachnauan-user.html">
+                  <span>
+                <img src="image/sachnauan/sachnauan-icon.png" alt="sachnauan-icon"/>
+              </span> SÁCH NẤU ĂN
+              </a>
+          </li>
+      </ul>
+  </nav>
+      <!--Ket thuc navbar-->
+    <!--Bat dau Content main-->
+    <!--Bat dau SP-->
+    <div class="item">
+       <a href="sachnauan-user.html">
+         <img src="image/sachnauan/sachnauan-bg.png">
+       </a>
+    </div>
+    <div class="text-lien-ket">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="index-user.html">Trang chủ</a>&nbsp;
+            <i class="fa fa-angle-right"></i>
+          </li>
+          <li>
+            <a href="sachnauan-user.html">Sách nấu ăn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="title-sp">Sách nấu ăn</h1> 
+    </div> 
+    <div class="product-list">
+      <div class="container">
+        <!--Bắt đầu "Tìm theo"-->
+        <span>TÌM THEO:</span>
+        <div class="dropdown-sp">
+          <button>Thể loại</button>
+          <ul class="dropdown">
+            <li><a href="#">sách nấu cón món tráng miệng </a></li>
+            <li><a href="#">sách nấu các món chay</a></li>
+            <li><a href="#">Sách nấu các món mặn</a></li>
+            <li><a href="#">Sách nấu các món kho</a></li>
+            <li><a href="#">Sách nấu các món xào </a></li>
+            <li><a href="#">Sách nấu các món giàu chất đạm</a></li>
+            <li><a href="#">Sách nấu các món canh</a></li>
+            <li><a href="#">Khác</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown-sp">
+          <button>Quốc gia</button>
+          <ul class="dropdown">
+            <li><a href="#">Việt Nam</a></li>
+            <li><a href="#">Trung Quốc</a></li>
+            <li><a href="#">Hàn Quốc</a></li>
+            <li><a href="#">Nhật Bản</a></li>
+            <li><a href="#">Ấn Độ</a></li>
+            <li><a href="#">Châu Âu</a></li>
+            <li><a href="#">Khác</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown-sp">
+          <button>Khoảng giá</button>
+          <ul class="dropdown">
+            <li><a href="#">Dưới 100 ngàn</a></li>
+            <li><a href="#">Từ 100 - 300 ngàn</a></li>
+            <li><a href="#">Từ 300 - 500 ngàn</a></li>
+            <li><a href="#">Từ 500 ngàn - 2 triệu</a></li>
+            <li><a href="#">Trên 2 triệu</a></li>
+          </ul>
+        </div>
+        
+        <div class="dropdown-sp">
+          <button>Khác</button>
+          <ul class="dropdown">
+            <li><a href="#">Bán chạy</a></li>
+            <li><a href="#">Giao nhanh</a></li>
+            <li><a href="#">Gần tôi</a></li>
+            <li><a href="#">freeship</a></li>
+            <li><a href="#">Khác</a></li>
+          </ul>
+        </div>
+        <!--Kết thúc "Tìm theo"-->
+        <ul class="thong-tin-them">
+          <li>
+            <p title="Sản phẩm chính hãng">
+              <span class="fa fa-thumbs-up"></span>
+              <small>Sản phẩm chính hãng</small>
+            </p>
+          </li>
+          <li>
+            <p title="Thanh toán linh hoạt">
+              <span class="fa fa-credit-card"></span>
+              <small>Thanh toán linh hoạt</small>
+            </p>
+          </li>
+          <li>
+            <p title="Giá thành tốt nhất">
+              <span class="fa fa-check-square"></span>
+              <small>Giá thành tốt nhất</small>
+            </p>
+          </li>
+          <li>
+            <p title="Hỗ trợ trả góp">
+              <span class="fa fa-usd"></span>
+              <small>Hỗ trợ trả góp</small>
+            </p>
+          </li>
+          <li>
+            <p title="Giao hàng toàn quốc">
+              <span class="fa fa-truck"></span>
+              <small>Giao hàng toàn quốc</small>
+            </p>
+          </li>
+        </ul>
+        <!--Bat dau Product-->
+          <!--Box San pham-->
+          <ul style="margin-top: 10px;" class="list-product">
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Bếp ấm nhà vui">
+                    <img src="image/sachnauan/nauan.jpg" alt="Bếp ấm nhà vui">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Bếp ấm nhà vui">Bếp ấm nhà vui</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">freeship trong nước+giảm 10% cho các lần mua hàng tiếp theo</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Về nhà ăn cơm">
+                    <img src="image/sachnauan/nauan1.jpg" alt="Về nhà ăn cơm">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Về nhà ăn cơm">Về nhà ăn cơm</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 5% cho đơn hàng kế tiếp+mua 2 tặng bộ dụng cụ trang trí siêu xinh</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Các món Tráng miệng">
+                    <img src="image/sachnauan/sach-9.jpg" alt="Các món Tráng miệng">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Các món Tráng miệng">Các món Tráng miệng</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">tặng 1 túi sách khi mua từ 2 sản phẩm trở lên.</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="100 món ăn ngày thường">
+                    <img src="image/sachnauan/sach-1.jpg" alt="100 món ăn ngày thường">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="100 món ăn ngày thường">100 món ăn ngày thường</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 143.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">tặng 5 kẹp sách siêu ngộ nghểnh</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Chuyện 2 căn bếp">
+                    <img src="image/sachnauan/nauan4.jpg" alt="Chuyện 2 căn bếp">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Chuyện 2 căn bếp">Chuyện 2 căn bếp</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">tặng một cuốn sách 5 bí kíp nấu ăn ngon</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Thực đơn đại tiệt">
+                    <img src="image/sachnauan/sach-3.jpg" alt="Thực đơn đại tiệt">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Thực đơn đại tiệt">Thực đơn đại tiệt</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 10% áp dụng cho voucher </p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Các món điểm tâm">
+                    <img src="image/sachnauan/sach-2.jpg" alt="Các món điểm tâm">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Các món điểm tâm">Các món điểm tâm</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 30% áp dụng cho voucher </p>
+                   <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Trái tim của CHEF mộc mạc nguyên bản ">
+                    <img src="image/sachnauan/sach7.jpg" alt="Trái tim của CHEF mộc mạc nguyên bản">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Trái tim của CHEF mộc mạc nguyên bản">Trái tim của CHEF mộc mạc nguyên bản</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 20%</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="The Homemade Vegan pantry:The Art of Making your own staples [A Cookbook]">
+                    <img src="image/sachnauan/nauan8.jpg" alt="The Homemade Vegan pantry:The Art of Making your own staples [A Cookbook]">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="The Homemade Vegan pantry:The Art of Making your own staples [A Cookbook]">The Homemade Vegan pantry:The Art of Making your own staples [A Cookbook]</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 200.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">voucher giam 40%</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Ẩm thực Trung Hoa">
+                    <img src="image/sachnauan/sach-4.jpg" alt="Ẩm thực Trung Hoa">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Ẩm thực Trung Hoa">Ẩm thực Trung Hoa</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 160.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 10%</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Món ăn đặc sản Nhật Hàn">
+                    <img src="image/sachnauan/sach-8.jpg" alt="Món ăn đặc sản Nhật Hàn">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Món ăn đặc sản Nhật Hàn">Món ăn đặc sản Nhật Hàn</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 195.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Đổi trả sản phẩm trong vòng 30 ngày</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Món Nhật vị Việt">
+                    <img src="image/sachnauan/sach6.jpg" alt="Món Nhật vị Việt">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Món Nhật vị Việt">Món Nhật vị Việt</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 139.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">đổi trả sản phẩm trong vòng 30 ngày.</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Món ăn đường phố">
+                    <img src="image/sachnauan/nauan-4.jpg" alt="Món ăn đường phố">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Món ăn đường phố">Món ăn đường phố</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 199.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">Món ăn đường phố</p>
+                  <p style="font-size: 12px;">Giảm 10% cho các voucher</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Làm bánh (100 món bánh ngon)">
+                    <img src="image/sachnauan/nauan-5.jpg" alt="Làm bánh (100 món bánh ngon)">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Làm bánh (100 món bánh ngon)">Làm bánh (100 món bánh ngon)</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 135.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 15%</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Chất Xơ diệu kì">
+                    <img src="image/sachnauan/nauan-6.jpg" alt="Chất Xơ diệu kì">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Chất Xơ diệu kì">Chất Xơ diệu kì</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 123.000 VND</span>
+                  </div>
+                  <p style="font-size: 12px;">giảm 5%</p>
+                  <p style="font-size: 12px;">Tặng 1 tập dề nấu ăn </p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            <!--Product-->
+            <li>
+              <div class="bglipro">
+                <figure class="product-img">
+                  <a href="sachnauanchitiet-user.html" title="Cá hồi xông khói">
+                    <img src="image/sachnauan/nauan-7.jpg" alt="Cá hồi xông khói">
+                  </a>
+                </figure>
+                <div class="product-item-info">
+                  <h4>
+                    <a href="sachnauanchitiet-user.html" title="Cá hồi xông khói">Cá hồi xông khói</a>
+                  </h4>
+                  <div class="price-box">
+                    <span>Giá: 155.000 VND</span>
+                  </div>
+                  <p style="font-size:12px;">Cá hồi xông khói</p>
+                  <p style="font-size:12px;">Đổi trả miễn phí khi phát hiện sản phẩm bị lỗi</p>
+                  <a href="sachnauanchitiet-user.html"><button>Chi tiết</button></a>
+                </div>
+              </div>
+            </li>
+            
+
+          </ul>
+        <!--Kết thúc Product-->
+        <!--Phân trang sản phẩm-->
+        <!--Phân trang sản phẩm-->
+        <div class="phan-trang">
+          <ul class="phan-trang-sp">
+            <li><a style="background-color: #fdd504;color: #000;" title="1">1</a></li>
+            <li><a href="sachnauan2-user.html" title="2">2</a></li>
+            <li><a href="sachnauan3-user.html" title="3">3</a></li>
+            <li><a href="sachnauan2-user.html" id="next" title="Next">Trang sau</a></li>
+          </ul>
+        </div>
+       </div>
+    </div>       
+    <!--Ket thuc SP-->
+    <!--Ket thuc Content main-->
+    <!--Bắt đầu Footer-->
+    <footer id="footer">
+      <div class="container">
+        <ul>
+          <li class="footer1">
+            <div class="heading">Chính sách</div>
+            <div class="content-footer">
+              <ul>
+                <li><a href="#" rel="nofollow">Chính sách giao hàng</a></li>
+                <li><a href="#" rel="nofollow">Chính sách bảo hành & đổi trả</a></li>
+                <li><a href="#" rel="nofollow">Chính sách thanh toán</a></li>
+                <li><a href="#" rel="nofollow">Chính sách bảo mật thông tin</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="footer1">
+            <div class="heading">Dịch vụ & hỗ trợ</div>
+            <div class="content-footer">
+              <ul>
+                <li><a href="#" rel="nofollow">An toàn mua bán</a></li>
+                <li><a href="#" rel="nofollow">Đăng ký cộng tác viên</a></li>
+                <li><a href="#" rel="nofollow">Câu hỏi thường gặp</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="footer1">
+            <div class="heading">Thông tin liên hệ</div>
+            <div class="content-footer">
+              <div class="social-media">
+                <a href="#" class="button-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="button-ggplus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="button-youtube"><i class="fa fa-youtube"></i></a>
+              </div>
+              <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+              <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+          </li>
+
+          <li class="footer1">
+            <div class="heading">Góp ý, phản ánh</div>
+            <div class="content-footer">
+              <span style="font-weight: bold; color: red;">0980.262.203 (Hà Nội)</span>
+              <span style="font-weight: bold; color: red;">0569.230.562 (Hồ Chí Minh)</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--Text cuối-->
+    </footer>
+    <!--Kết thúc Footer-->
+    
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
